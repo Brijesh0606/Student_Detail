@@ -119,7 +119,7 @@ public class Homework extends Fragment implements SelectListener {
 
         }
     int n = studentname.size();
-        Toast.makeText(getContext(), n+"length", Toast.LENGTH_LONG).show();
+        Toast.makeText(getContext(), n+"length", Toast.LENGTH_SHORT).show();
     MyAdapter myAdapter = new MyAdapter(getContext(),new ArrayList<String>(studentname),  this);
         recyclerView.setAdapter(myAdapter);
         myAdapter.notifyDataSetChanged();

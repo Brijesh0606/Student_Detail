@@ -16,16 +16,4 @@ public class scores {
     public double getScore() {
         return Score;
     }
-
-    public String getType() {
-        return Type;
-    }
-
-    public void setScore(double score) {
-        Score = score;
-    }
-
-    public void setType(String type) {
-        Type = type;
-    }
 }

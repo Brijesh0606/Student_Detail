@@ -10,7 +10,7 @@
 
     <ImageView
         android:layout_width="350dp"
-        android:layout_height="350dp"
+        android:layout_height="300dp"
         android:src="@drawable/ic_launcher_background"
         android:layout_margin="10dp"
         android:layout_gravity="center_horizontal"
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="@string/student_id"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
         android:textSize="20sp"
         android:id="@+id/student_id"/>
 
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="@string/student_name"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
         android:textSize="25sp"
         android:id="@+id/student_name"/>
 
@@ -111,7 +111,5 @@
         </TableRow>
 
     </TableLayout>
-
-
 
 </LinearLayout>

@@ -55,15 +55,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
 
             studentnameview = itemView.findViewById(R.id.nameofstudent);
 
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if(selectListener != null){
-                        int pos = getAbsoluteAdapterPosition();
+            itemView.setOnClickListener(v -> {
+                if(selectListener != null){
+                    int pos = getAbsoluteAdapterPosition();
 
-                        if(pos != RecyclerView.NO_POSITION){
-                            selectListener.onItemClick(pos);
-                        }
+                    if(pos != RecyclerView.NO_POSITION){
+                        selectListener.onItemClick(pos);
                     }
                 }
             });

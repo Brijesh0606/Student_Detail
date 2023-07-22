@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +15,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -124,7 +122,7 @@ public class Exam extends Fragment implements SelectListener {
 
         }
         int n = studentname.size();
-        Toast.makeText(getContext(), n+"length", Toast.LENGTH_LONG).show();
+        Toast.makeText(getContext(), n+"length", Toast.LENGTH_SHORT).show();
         MyAdapter myAdapter = new MyAdapter(getContext(),new ArrayList<String>(studentname),this);
         recyclerView.setAdapter(myAdapter);
         myAdapter.notifyDataSetChanged();

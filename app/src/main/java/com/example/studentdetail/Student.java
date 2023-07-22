@@ -2,8 +2,6 @@ package com.example.studentdetail;
 
 import com.google.gson.annotations.SerializedName;
 
-import java.util.List;
-
 public class Student {
 
     @SerializedName("_id")
@@ -38,10 +36,6 @@ public class Student {
 
     public void setName(String name) {
         Name = name;
-    }
-
-    public void setScores(scores[] scores) {
-        Scores = scores;
     }
 
 }
