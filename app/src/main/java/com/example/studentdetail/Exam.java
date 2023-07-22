@@ -107,7 +107,6 @@ public class Exam extends Fragment implements SelectListener {
             if (score >= 35.0d) {
                 studentname.add(name);
             }
-
         }
         exam = new Student[studentname.size()];
         int j=0;

@@ -15,7 +15,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class detail_of_student extends AppCompatActivity {
 
     TextView student_id, student_name, exam_score, home_score, quiz_score;
-
     ImageView student_image;
 
     @Override
